@@ -1,0 +1,54 @@
+array size: 4, num elements: 1 contents: 12 
+array size: 4, num elements: 2 contents: 12 34 
+array size: 4, num elements: 3 contents: 12 34 67 
+array size: 4, num elements: 4 contents: 12 34 67 ab 
+array size: 8, num elements: 5 contents: 12 34 67 ab 78 
+array size: 8, num elements: 6 contents: 12 34 67 ab 78 21 
+array size: 8, num elements: 7 contents: 12 34 67 ab 78 21 21 
+array size: 8, num elements: 8 contents: 12 34 67 ab 78 21 21 21 
+array size: 16, num elements: 9 contents: 12 34 67 ab 78 21 21 21 21 
+array size: 16, num elements: 8 contents: 34 67 ab 78 21 21 21 21 
+array size: 16, num elements: 7 contents: 67 ab 78 21 21 21 21 
+array size: 16, num elements: 6 contents: ab 78 21 21 21 21 
+array size: 16, num elements: 5 contents: 78 21 21 21 21 
+array size: 16, num elements: 4 contents: 21 21 21 21 
+array size: 16, num elements: 3 contents: 21 21 21 
+array size: 16, num elements: 2 contents: 21 21 
+array size: 16, num elements: 1 contents: 21 
+array size: 16, num elements: 0 contents: 
+array size: 4, num elements: 1 contents: 0012 
+array size: 4, num elements: 2 contents: 0012 0034 
+array size: 4, num elements: 3 contents: 0012 0034 4567 
+array size: 4, num elements: 4 contents: 0012 0034 4567 89ab 
+array size: 8, num elements: 5 contents: 0012 0034 4567 89ab 5678 
+array size: 8, num elements: 6 contents: 0012 0034 4567 89ab 5678 0021 
+array size: 8, num elements: 7 contents: 0012 0034 4567 89ab 5678 0021 0321 
+array size: 8, num elements: 8 contents: 0012 0034 4567 89ab 5678 0021 0321 4321 
+array size: 16, num elements: 9 contents: 0012 0034 4567 89ab 5678 0021 0321 4321 4321 
+array size: 16, num elements: 8 contents: 0012 0034 4567 89ab 5678 0021 0321 4321 
+array size: 16, num elements: 7 contents: 0012 0034 4567 89ab 5678 0021 0321 
+array size: 16, num elements: 6 contents: 0012 0034 4567 89ab 5678 0021 
+array size: 16, num elements: 5 contents: 0012 0034 4567 89ab 5678 
+array size: 16, num elements: 4 contents: 0012 0034 4567 89ab 
+array size: 16, num elements: 3 contents: 0012 0034 4567 
+array size: 16, num elements: 2 contents: 0012 0034 
+array size: 16, num elements: 1 contents: 0012 
+array size: 16, num elements: 0 contents: 
+array size: 4, num elements: 1 contents: 00000012 
+array size: 4, num elements: 2 contents: 00000012 00000034 
+array size: 4, num elements: 3 contents: 00000012 00000034 00004567 
+array size: 4, num elements: 4 contents: 00000012 00000034 00004567 000089ab 
+array size: 8, num elements: 5 contents: 00000012 00000034 00004567 000089ab 00125678 
+array size: 8, num elements: 6 contents: 00000012 00000034 00004567 000089ab 00125678 00000021 
+array size: 8, num elements: 7 contents: 00000012 00000034 00004567 000089ab 00125678 00000021 00000321 
+array size: 8, num elements: 8 contents: 00000012 00000034 00004567 000089ab 00125678 00000021 00000321 00004321 
+array size: 16, num elements: 9 contents: 00000012 00000034 00004567 000089ab 00125678 00000021 00000321 00004321 00054321 
+array size: 16, num elements: 8 contents: 00000012 00000034 00004567 000089ab 00000021 00000321 00004321 00054321 
+array size: 16, num elements: 7 contents: 00000012 00000034 00004567 000089ab 00000321 00004321 00054321 
+array size: 16, num elements: 6 contents: 00000012 00000034 00004567 00000321 00004321 00054321 
+array size: 16, num elements: 5 contents: 00000012 00000034 00004567 00004321 00054321 
+array size: 16, num elements: 4 contents: 00000012 00000034 00004321 00054321 
+array size: 16, num elements: 3 contents: 00000012 00000034 00054321 
+array size: 16, num elements: 2 contents: 00000012 00054321 
+array size: 16, num elements: 1 contents: 00000012 
+array size: 16, num elements: 0 contents: 
