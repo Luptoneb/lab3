@@ -57,7 +57,7 @@ void addElement(arrayList * arylstP, void * element)
 void removeElement(arrayList * arylstP, int index)
 {
     int i;
-    for(i = index; i > (*arylstP).numElements; i++){
+    for(i = index; i < (*arylstP).numElements; i++){
         if((*arylstP).type == charType){
             ((char*)(*arylstP).array)[i] = ((char*)(*arylstP).array)[i+1];
         }
