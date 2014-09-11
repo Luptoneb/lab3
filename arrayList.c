@@ -5,9 +5,16 @@
 //getSize not accessed outside of this file so declare it to be static
 //static essentially makes it private to this file 
 static int getSize(primitiveType type);
-
+/*
+ * @author Erik Lupton
+ * @version 2.2
+ *
+ * arrayList is a series of function designed to make a polymorphous array easier to use
+ * it has 5 variables in a struct called arrayList that is designated by arrayList.h
+ */
 arrayList * initialize(primitiveType type)
 {
+   //set variables and designate memory for struct
    arrayList * a = (arrayList*)malloc(sizeof(arrayList));
    (*a).array = malloc(getSize(type)*4);
    (*a).elementSize = getSize(type);
@@ -17,6 +24,9 @@ arrayList * initialize(primitiveType type)
    return a;
 }
 
+/*
+ * simple function that returns the size of the elements in the array specified by the type variable
+ */
 int getSize(primitiveType type)
 {
    if(type == charType){
@@ -28,19 +38,25 @@ int getSize(primitiveType type)
    return sizeof(int);
 }
 
+/*
+ * adds an element to the arrayList.  If the arrayList needs more room, it doubles the current size of the array
+ */
 void addElement(arrayList * arylstP, void * element)
 {
    int i;
+   //if there is not enough room in the array
    if((*arylstP).arraySize == (*arylstP).numElements){
-       void * newArr;
-       newArr = malloc((*arylstP).elementSize * (((*arylstP).arraySize)*2));
+       void * newArr;  //make a new array
+       newArr = malloc((*arylstP).elementSize * (((*arylstP).arraySize)*2)); //allocate memory
+       //move all elements in old array into new array byte by byte
        for(i = 0; i < (((*arylstP).arraySize)*((*arylstP).elementSize)); i++){
          ((char*)newArr)[i] = ((char*)(*arylstP).array)[i];
        }
-       free((*arylstP).array);
-       (*arylstP).array = newArr;
-       (*arylstP).arraySize = ((*arylstP).arraySize)*2;
+       free((*arylstP).array);//free old array allocation to prevent memory leakage
+       (*arylstP).array = newArr;//set pointer in arrayList to new array
+       (*arylstP).arraySize = ((*arylstP).arraySize)*2;//double size variable
    }
+   //add new element to array casting according to type
    if((*arylstP).type == charType){
        ((char*)(*arylstP).array)[(*arylstP).numElements] = (*(char*)element);
    }
@@ -50,13 +66,16 @@ void addElement(arrayList * arylstP, void * element)
    else if((*arylstP).type == intType){
        ((int*)(*arylstP).array)[(*arylstP).numElements] = (*(int*)element);
    }
-   (*arylstP).numElements++;
+   (*arylstP).numElements++;//increment number of elements
 }
 
-
+/*
+ * remove a singe element from the internal array designated by the index
+ */
 void removeElement(arrayList * arylstP, int index)
 {
     int i;
+    //move all elements from index to end left, casting according to type
     for(i = index; i < (*arylstP).numElements; i++){
         if((*arylstP).type == charType){
             ((char*)(*arylstP).array)[i] = ((char*)(*arylstP).array)[i+1];
@@ -68,10 +87,12 @@ void removeElement(arrayList * arylstP, int index)
             ((int*)(*arylstP).array)[i] = ((int*)(*arylstP).array)[i+1];
         }
     }
-    (*arylstP).numElements--;
+    (*arylstP).numElements--; //decrement count of elements
 }
       
-
+/*
+ * prints the array out according to type
+ */
 void printArray(arrayList * arylstP)
 {
    int i;
